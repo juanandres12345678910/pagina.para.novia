@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>¿Quieres ser mi novia?</title>
+    <!--conect to css-->
+    <link rel="stylesheet" href="style.css">
+
+<script>
+function accionParaCuandoEllaDigaQueSi() {
+    alert("¡Ahora ya somos novios! ❤️");
+  }
+
+  function mueveElBoton() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    const newWidth = Math.random() * width;
+    const newHeight = Math.random() * height;
+
+    const btnNo = document.getElementById("btnNo");
+    btnNo.style.position = "absolute";
+    btnNo.style.left = newWidth + "px";
+    btnNo.style.top = newHeight + "px";
+  }
+</script>
+</head>
+<body>
+    
+</body>
+    
+
+<div id="container">
+    <h1>¿Quieres ser mi novia?</h1>
+    <div id="buttons">
+      <button onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi">Sí</button>
+      <button id="btnNo" onmouseover="mueveElBoton()">No</button>
+    </div>
+    <img src="https://cdn.bhdw.net/im/puss-and-kitty-from-puss-in-boots-the-last-wish-wallpaper-109876_w635.webp" alt="" width="400">
+    </div>
+    <script>
+         function accionParaCuandoEllaDigaQueSi() {
+        const respuesta = confirm("¿Estás segura de querer ser mi novia?");
+        if (respuesta) {
+          // Redireccionar a la nueva página si responde "Sí"
+          window.location.href = "opcionsi.html";
+        } else {
+          alert("bueno vales monda");
+        }
+      }
+  
+      function mueveElBoton() {
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+  
+        const newWidth = Math.random() * width;
+        const newHeight = Math.random() * height;
+  
+        const btnNo = document.getElementById("btnNo");
+        btnNo.style.position = "absolute";
+        btnNo.style.left = newWidth + "px";
+        btnNo.style.top = newHeight + "px";
+      }
+    </script>
+
+   
+
+<h1>
